@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Оптовые поставки Bucks (Adopt Me) под ключ — от 100 000 до 1 000 000 Bucks | HawwkeShop</title>
-<meta name="description" content="Оптовые поставки Bucks (Adopt Me) на подготовленную учётную запись: от 100 000 до 1 000 000 Bucks, ставка 3,55 ₽ за 1 000 Bucks, подготовка учётной записи +20 ₽. Одна партия — одна учётная запись. Проведение сделки через гарант FunPay. Конфигуратор оптовой партии, регламент сделки и условия гарантии. Продавец HAWWKE — 5 лет на площадке, 2 082+ отзыва, рейтинг 5,0.">
+<meta name="description" content="Оптовые поставки Bucks (Adopt Me) на подготовленную учётную запись: от 100 000 до 1 000 000 Bucks, ставка 3,55 ₽ за 1 000 Bucks без доплат. Одна партия — одна учётная запись. Подготовленные аккаунты с Trading License — отдельный лот 20 ₽/шт. Проведение сделки через гарант FunPay. Продавец HAWWKE — 5 лет на площадке, 2 082+ отзыва, рейтинг 5,0.">
 <meta name="keywords" content="Adopt Me Bucks оптом, купить Bucks Adopt Me, заливка Bucks, оптовая заливка Adopt Me, HawwkeShop, FunPay Adopt Me">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0a0806">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://hawwkeshop.github.io/adoptme-opt/">
 <meta property="og:title" content="Оптовые поставки Bucks (Adopt Me) под ключ — от 100 000 до 1 000 000 Bucks">
-<meta property="og:description" content="Заливка Bucks на подготовленную учётную запись от 100 000 до 1 000 000 Bucks. Ставка 3,55 ₽ за 1 000 Bucks плюс 20 ₽ за подготовку учётной записи. Проведение сделки через гарант FunPay.">
+<meta property="og:description" content="Заливка Bucks на подготовленную учётную запись от 100 000 до 1 000 000 Bucks. Ставка 3,55 ₽ за 1 000 Bucks, без доплат за подготовку. Подготовленные аккаунты с Trading License — отдельный лот 20 ₽/шт. Проведение сделки через гарант FunPay.">
 <meta property="og:image" content="https://hawwkeshop.github.io/adoptme-opt/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -374,6 +374,18 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
 .copy-modal-actions{display:flex;gap:10px;margin-top:14px}
 .copy-modal-actions .btn{flex:1 1 0;padding:12px 16px;font-size:14px}
 
+/* ---------- тарифная сетка / розничный лот ---------- */
+.tariff{margin-top:36px}
+.tariff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.tariff-card{padding:18px;border:1px solid var(--line-soft);border-radius:var(--r-md);background:linear-gradient(180deg,rgba(24,18,13,.9),rgba(14,10,8,.9));display:flex;flex-direction:column;gap:6px}
+.tariff-card .t-vol{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tariff-card .t-price{font-size:clamp(19px,2.2vw,24px);font-weight:800;color:var(--gold-2);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.tariff-card .t-qty{font-size:12.5px;color:var(--muted);line-height:1.45}
+.retail{margin-top:16px;padding:22px;border:1px solid var(--line);border-radius:var(--r-md);background:rgba(245,196,81,.05);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center}
+.retail h3{font-size:17px;font-weight:700}
+.retail p{margin-top:8px;font-size:13.5px;color:var(--muted);line-height:1.62}
+.retail .btn{white-space:nowrap}
+
 /* ---------- responsive ---------- */
 @media (max-width:980px){
   .calc{grid-template-columns:1fr}
@@ -383,6 +395,8 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
   .trust{grid-template-columns:1fr}
   .reviews{grid-template-columns:repeat(2,1fr)}
   .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .tariff-grid{grid-template-columns:repeat(2,1fr)}
+  .retail{grid-template-columns:minmax(0,1fr)}
   .head-nav{display:none}
 }
 @media (max-width:640px){
@@ -399,6 +413,10 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
   .calc-form,.calc-sum,.seller,.escrow{padding:20px}
   .steps{grid-template-columns:1fr}
   .reviews{grid-template-columns:1fr}
+  .tariff-grid{gap:10px}
+  .tariff-card{padding:14px}
+  .retail{padding:18px}
+  .retail .btn{white-space:normal}
   .seller-nums{gap:8px}
   .seller-num b{font-size:17px}
   .footer-top{flex-direction:column;align-items:flex-start;gap:10px}
@@ -436,12 +454,14 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
       <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Опт · Adopt Me · Bucks</span>
       <h1>Оптовые поставки Bucks (Adopt Me) <em>под ключ</em></h1>
       <p class="hero-sub">
-        Заливка валюты на подготовленный аккаунт от <b>100 000 до 1 000 000 Bucks</b>.
-        Ставка <b>3,55 ₽ за 1 000 Bucks</b> + <b>20 ₽ за подготовку учётной записи</b>.
+        Заливка валюты на подготовленный аккаунт от <b>100 000 до 1 000 000 Bucks</b>.
+        Ставка <b>3,55 ₽ за 1 000 Bucks</b> — фиксированная, без доплат за подготовку.
+        Нужны пустые подготовленные аккаунты с Trading License — отдельный лот <b>20 ₽/шт.</b>
         Проведение сделки через гарант FunPay.
       </p>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="#calc">Рассчитать оптовую партию</a>
+        <a class="btn btn-gold" href="https://funpay.com/lots/offer?id=82991200" target="_blank" rel="noopener">Оформить оптовый заказ на FunPay ↗</a>
+        <a class="btn btn-ghost" href="#calc">Рассчитать оптовую партию</a>
         <a class="btn btn-ghost" href="https://funpay.com/users/4165620/" target="_blank" rel="noopener">Профиль HAWWKE на FunPay ↗</a>
       </div>
 
@@ -460,7 +480,7 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
       <div class="sec-head">
         <span class="kicker">Конфигуратор партии</span>
         <h2>Конфигуратор оптовой партии</h2>
-        <p class="sec-lead">Формат отгрузки: 1 партия = 1 учётная запись (от 100 000 до 1 000 000 Bucks). Ставка 3,55 ₽ за 1 000 Bucks + 20 ₽ за подготовку учётной записи.</p>
+        <p class="sec-lead">Формат отгрузки: 1 партия = 1 учётная запись (от 100 000 до 1 000 000 Bucks). Ставка 3,55 ₽ за 1 000 Bucks — стоимость подготовки учётной записи уже включена в ставку, отдельных доплат нет.</p>
       </div>
 
       <div class="calc">
@@ -489,26 +509,62 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
               <span class="field-label">Учётные записи</span>
               <span class="field-value"><span>1</span><small>на партию</small></span>
             </div>
-            <p class="hint" style="margin-top:0">Одна партия — одна учётная запись: <b style="color:var(--gold-2)">+20 ₽</b> за подготовку. При потребности в нескольких учётных записях оформляется отдельная партия на каждую: собственный объём Bucks и отдельная оплата.</p>
+            <p class="hint" style="margin-top:0">Одна партия — одна учётная запись, подготовка уже входит в ставку 3,55 ₽ за 1 000 Bucks. При потребности в нескольких учётных записях оформляется отдельная партия на каждую: собственный объём Bucks и отдельная оплата. Нужны пустые подготовленные аккаунты с Trading License без заливки — отдельный лот <b style="color:var(--gold-2)">20 ₽/шт.</b></p>
           </div>
 
         </div>
 
         <div class="card calc-sum" aria-live="polite">
           <div class="sum-label">Расчётная стоимость лота</div>
-          <div class="sum-total" id="sumTotal">375,00 ₽</div>
+          <div class="sum-total" id="sumTotal">355,00 ₽</div>
           <p class="sum-fee">Указана расчётная стоимость лота на витрине FunPay (включает комиссию площадки; эквайринг выбранного способа оплаты рассчитывается шлюзом при оформлении).</p>
           <div class="sum-rows">
             <div class="sum-row"><span>Объём Bucks: <b id="sumVolInline" style="color:var(--text)">100 000</b></span><b id="sumBucks">355,00 ₽</b></div>
-            <div class="sum-row"><span>Подготовка учётной записи: 1 × 20 ₽</span><b id="sumAcc">20,00 ₽</b></div>
-            <div class="sum-row"><span>Средняя ставка за 1 000 Bucks с учётом подготовки</span><b id="sumAvg">3,75 ₽</b></div>
+            <div class="sum-row"><span>Количество в лоте на FunPay (1 шт. = 1 000 Bucks)</span><b id="sumQty">100 шт.</b></div>
+            <div class="sum-row"><span>Ставка за 1 000 Bucks</span><b>3,55 ₽</b></div>
           </div>
           <div class="sum-actions">
-            <button type="button" class="btn btn-gold btn-wide" id="copyBtn">Скопировать текст заявки для чата FunPay</button>
-            <a class="btn btn-ghost btn-wide" id="funpayBtn" href="https://funpay.com/users/4165620/" target="_blank" rel="noopener">Перейти в профиль HAWWKE на FunPay ↗</a>
+            <a class="btn btn-gold btn-wide" id="funpayBtn" href="https://funpay.com/lots/offer?id=82991200" target="_blank" rel="noopener">Оформить оптовый заказ на FunPay ↗</a>
+            <button type="button" class="btn btn-ghost btn-wide" id="copyBtn">Скопировать текст заявки для чата FunPay</button>
           </div>
+          <p class="hint" style="text-align:center;margin-top:10px">На FunPay укажите в поле количества от 100 до 1 000 шт., 1 шт. = 1 000 Bucks.</p>
           <div class="copy-state" id="copyState" role="status" aria-live="polite"></div>
           <p class="sum-note">Оплата и проведение сделки — только через FunPay: площадка выступает гарантом и удерживает средства до подтверждения заказа. Ставка фиксированная, скрытых доплат нет. Срок подготовки партии согласуется в чате FunPay до оплаты.</p>
+        </div>
+      </div>
+
+      <div class="tariff">
+        <h3 class="kicker">Тарифная сетка · опт</h3>
+        <div class="tariff-grid">
+          <article class="tariff-card">
+            <span class="t-vol">100 000 Bucks</span>
+            <span class="t-price">355,00 ₽</span>
+            <span class="t-qty">100 шт. в лоте · 1 шт. = 1 000 Bucks</span>
+          </article>
+          <article class="tariff-card">
+            <span class="t-vol">250 000 Bucks</span>
+            <span class="t-price">887,50 ₽</span>
+            <span class="t-qty">250 шт. в лоте · 1 шт. = 1 000 Bucks</span>
+          </article>
+          <article class="tariff-card">
+            <span class="t-vol">500 000 Bucks</span>
+            <span class="t-price">1 775,00 ₽</span>
+            <span class="t-qty">500 шт. в лоте · 1 шт. = 1 000 Bucks</span>
+          </article>
+          <article class="tariff-card">
+            <span class="t-vol">1 000 000 Bucks</span>
+            <span class="t-price">3 550,00 ₽</span>
+            <span class="t-qty">1 000 шт. в лоте · 1 шт. = 1 000 Bucks</span>
+          </article>
+        </div>
+        <p class="hint">Цена считается чисто по ставке 3,55 ₽ за 1 000 Bucks — доплаты за подготовку учётной записи нет. В лоте на FunPay укажите нужное количество: от 100 до 1 000 шт. (1 шт. = 1 000 Bucks).</p>
+
+        <div class="retail">
+          <div>
+            <h3>Подготовленные аккаунты с Trading License (20 ₽/шт., автовыдача 24/7)</h3>
+            <p>Отдельный розничный лот: пустые подготовленные учётные записи с разблокированной Trading License и техническим e-mail в статусе <code>Pending</code>, без заливки Bucks. Для тех, кому нужны готовые учётные записи отдельно от оптовой партии.</p>
+          </div>
+          <a class="btn btn-gold" href="https://funpay.com/lots/offer?id=82991564" target="_blank" rel="noopener">Купить аккаунты с лицензией на FunPay ↗</a>
         </div>
       </div>
     </div>
@@ -653,7 +709,7 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
       <div class="rules">
       <article class="rule">
         <h4>1. Объём партии</h4>
-        <p>От 100 000 до 1 000 000 Bucks на одну учётную запись, шаг 50 000 Bucks. Ставка: 3,55 ₽ за 1 000 Bucks плюс 20 ₽ за подготовку учётной записи. Одна партия — одна учётная запись.</p>
+        <p>От 100 000 до 1 000 000 Bucks на одну учётную запись, шаг 50 000 Bucks. Ставка: 3,55 ₽ за 1 000 Bucks, доплаты за подготовку учётной записи нет. Одна партия — одна учётная запись. Пустые подготовленные аккаунты с Trading License продаются отдельным лотом — 20 ₽/шт.</p>
       </article>
       <article class="rule">
         <h4>2. Только подготовленные учётные записи</h4>
@@ -684,7 +740,7 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
       <h2>Оформление оптовой партии</h2>
       <p>Сформируйте конфигурацию партии, скопируйте текст заявки и направьте его в чат FunPay. Параметры и старт работ согласуются там же.</p>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="#calc">Сформировать заявку</a>
+        <a class="btn btn-gold" href="https://funpay.com/lots/offer?id=82991200" target="_blank" rel="noopener">Оформить оптовый заказ на FunPay ↗</a>
         <a class="btn btn-ghost" href="https://funpay.com/users/4165620/" target="_blank" rel="noopener">Написать HAWWKE на FunPay ↗</a>
       </div>
     </div>
@@ -734,7 +790,7 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
         "@id": "https://hawwkeshop.github.io/adoptme-opt/#website",
         "url": "https://hawwkeshop.github.io/adoptme-opt/",
         "name": "HawwkeShop",
-        "description": "Оптовые поставки Bucks (Adopt Me) на подготовленную учётную запись: от 100 000 до 1 000 000 Bucks, ставка 3,55 ₽ за 1 000 Bucks плюс 20 ₽ за подготовку. Проведение сделки через гарант FunPay.",
+        "description": "Оптовые поставки Bucks (Adopt Me) на подготовленную учётную запись: от 100 000 до 1 000 000 Bucks, ставка 3,55 ₽ за 1 000 Bucks без доплат. Подготовленные аккаунты с Trading License — отдельный лот 20 ₽/шт. Проведение сделки через гарант FunPay.",
         "inLanguage": "ru-RU",
         "publisher": {
           "@type": "Organization",
@@ -750,10 +806,10 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "1. Объём партии",
+            "name": "1. Объём партии и тарифы",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "От 100 000 до 1 000 000 Bucks на одну учётную запись, шаг 50 000 Bucks. Ставка: 3,55 ₽ за 1 000 Bucks плюс 20 ₽ за подготовку учётной записи. Одна партия — одна учётная запись."
+              "text": "Опт: от 100 000 до 1 000 000 Bucks на одну учётную запись, шаг 50 000 Bucks. Ставка 3,55 ₽ за 1 000 Bucks, доплат за подготовку учётной записи нет: 100 000 Bucks = 355,00 ₽, 250 000 Bucks = 887,50 ₽, 500 000 Bucks = 1 775,00 ₽, 1 000 000 Bucks = 3 550,00 ₽. На FunPay в поле количества указывается от 100 до 1 000 шт., 1 шт. = 1 000 Bucks. Одна партия — одна учётная запись. Пустые подготовленные аккаунты с Trading License (без заливки Bucks) продаются отдельным розничным лотом — 20 ₽/шт., автовыдача 24/7."
             }
           },
           {
@@ -806,17 +862,17 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
 (function () {
   "use strict";
 
-  /* -------- единая ставка: меняется здесь и только здесь -------- */
-  var RATE_PER_1000 = 3.55;   // ₽ за 1 000 Bucks
-  var ACC_PRICE     = 20;     // ₽ за один подготовленный аккаунт (1 заказ = 1 аккаунт)
+  /* -------- ставки: меняются здесь и только здесь -------- */
+  var RATE_PER_1000     = 3.55;   // ₽ за 1 000 Bucks — единственная ставка опта
+  var ACC_LICENSE_PRICE = 20;     // ₽ за подготовленный аккаунт с Trading License — отдельный лот, в опт не входит
+  var LOT_OFFER_URL     = "https://funpay.com/lots/offer?id=82991200";
 
   var volRange = document.getElementById("volRange");
   var volVal   = document.getElementById("volVal");
   var out = {
     total: document.getElementById("sumTotal"),
     bucks: document.getElementById("sumBucks"),
-    acc:   document.getElementById("sumAcc"),
-    avg:   document.getElementById("sumAvg"),
+    qty:   document.getElementById("sumQty"),
     volInline: document.getElementById("sumVolInline")
   };
   var copyBtn   = document.getElementById("copyBtn");
@@ -825,7 +881,6 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
 
   var nfInt = new Intl.NumberFormat("ru-RU", { maximumFractionDigits: 0 });
   var nfMoney = new Intl.NumberFormat("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  var nfAvg = new Intl.NumberFormat("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 3 });
 
   function num(el, fallback) {
     var v = parseInt(el.value, 10);
@@ -841,16 +896,15 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
 
   function state() {
     var vol = clamp(num(volRange, 100000), 100000, 1000000);
-    var bucksCost = (vol / 1000) * RATE_PER_1000;
-    var accCost = ACC_PRICE;
-    var total = bucksCost + accCost;
-    var avg = total / (vol / 1000);
-    return { vol: vol, bucksCost: bucksCost, accCost: accCost, total: total, avg: avg };
+    var qty = vol / 1000;                       // 1 шт. в лоте FunPay = 1 000 Bucks
+    var total = qty * RATE_PER_1000;            // чистая ставка, без доплат
+    return { vol: vol, qty: qty, total: total };
   }
 
   function orderText(s) {
     return "Здравствуйте. Интересует оптовая партия: " + nfInt.format(s.vol) + " Bucks на 1 аккаунт " +
-           "(расчётная сумма лота: " + money(s.total) + "). Готов оформить через FunPay.";
+           "(в лоте " + nfInt.format(s.qty) + " шт. по 1 000 Bucks, расчётная сумма лота: " + money(s.total) + "). " +
+           "Готов оформить через FunPay: " + LOT_OFFER_URL;
   }
 
   function render() {
@@ -858,9 +912,8 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
     volRange.value = String(s.vol);
     volVal.textContent = nfInt.format(s.vol);
     out.total.textContent = money(s.total);
-    out.bucks.textContent = money(s.bucksCost);
-    out.acc.textContent = money(s.accCost);
-    out.avg.textContent = nfAvg.format(s.avg) + " ₽";
+    out.bucks.textContent = money(s.total);
+    out.qty.textContent = nfInt.format(s.qty) + " шт.";
     out.volInline.textContent = nfInt.format(s.vol);
     volRange.setAttribute("aria-valuetext", nfInt.format(s.vol) + " Bucks");
     paintRange(volRange);
@@ -945,8 +998,10 @@ footer{margin-top:80px;border-top:1px solid var(--line-soft);background:rgba(8,6
     if (s.vol < 100000) console.error("volume below minimum", s.vol);
     if (s.vol > 1000000) console.error("volume above maximum", s.vol);
     if (s.vol % 50000 !== 0) console.error("volume step broken", s.vol);
-    var expect = (s.vol / 1000) * 3.55 + 20;
+    var expect = (s.vol / 1000) * 3.55;
     if (Math.abs(expect - s.total) > 0.005) console.error("total mismatch", expect, s.total);
+    if (Math.abs(s.qty - s.vol / 1000) > 1e-9) console.error("qty mismatch", s.qty);
+    if (ACC_LICENSE_PRICE !== 20) console.error("license price drift", ACC_LICENSE_PRICE);
   }
 
   render();
